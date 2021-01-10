@@ -1,0 +1,45 @@
+
+@import "../../../style/colors";
+
+.imageCard{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.imageCard > .username-label{
+    font-size: 2vw;
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: $blue;
+}
+
+.pinkBorder{
+    border: solid 1.7rem $pink;
+}
+
+.blueBorder{
+    border: solid 1.7rem $blue;
+}
+
+.greenBorder{
+    border: solid 1.7rem $green;
+}
+
+.imageCard:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+@media screen and (orientation:landscape) { 
+    .card-tall {
+        grid-row:span 2 / auto;
+    }
+    
+    .card-wide{
+        grid-column: span 2 / auto;
+    }
+ }

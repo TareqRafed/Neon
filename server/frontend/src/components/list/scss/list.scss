@@ -1,0 +1,48 @@
+
+@import "../../../style/colors";
+
+ul{
+    list-style-type: none;
+}
+
+ul > li > a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 2rem;
+
+}
+
+#HeaderList > li > a {
+    color: white;
+    
+}
+
+#MenuList > li > a {
+    color: $blue;
+    font-size: medium;
+}
+
+
+#HeaderList .imageIcon{
+    height: 1.3rem;
+    margin-right: 1rem;
+
+    
+}
+
+#MenuList .imageIcon{
+    height: 3rem;
+    margin-right: 1rem;
+
+    
+}
+
+.imageIcon{
+    // to give pixlated edges
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+

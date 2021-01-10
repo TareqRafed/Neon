@@ -1,0 +1,31 @@
+@import "../../../style/colors"; 
+
+
+$loginPadding: 2rem;
+
+$elementsMargin : 0.5vh;
+
+$elementsfontSize : 2vw;
+
+$inputFontSize : 1.4rem;
+
+
+
+.label{
+    text-align: left;
+    font-size: $elementsfontSize;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    z-index: 3;
+}
+
+.text-input{
+    margin: $elementsMargin;
+    height: 5.5rem;
+    font-family: 'Press start 2p';
+    width: calc(100% - #{$elementsMargin}*2); // full width - margin
+    font-size: $inputFontSize;
+    border: solid 0.7rem $pink;
+    background-color: white;
+}

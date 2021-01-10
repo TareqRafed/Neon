@@ -1,0 +1,79 @@
+@import "../../../style/colors";
+
+#menuButton{
+    position: absolute;
+ // top: 7%;
+ // right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+
+  &:focus {
+    outline: none;
+  }
+
+  
+}
+
+#menuButton > div {
+    width: 0.5rem;
+    height: 0.5rem;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+// animation
+
+#menuButton.open {
+    
+    
+    :first-child {
+      background: $green;
+        transform: rotate(45deg)
+        }
+    
+        :nth-child(2) {
+            background:  $blue;
+            opacity: 0;
+            transform: translateX(20px);
+        }
+    
+        :nth-child(3) {
+          background: $black;
+            transform: rotate(-45deg)
+        }
+    
+   
+  }
+
+  #menuButton.closed {
+    
+    :first-child {
+      background: $pink;
+        transform: rotate(0)
+        }
+    
+        :nth-child(2) {
+          background:  $blue;
+            opacity: 1;
+            transform: translateX(0);
+        }
+    
+        :nth-child(3) {
+          background:  $green;
+            transform: rotate(0)
+        }
+    
+   
+  }
+
+ 
+  

@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
+import App from './app/js/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { createStore, applyMiddleware  } from 'redux';
+import reducer from './store/reducers/auth';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+
+
+const store = createStore(reducer, composeWithDevTools(
+  applyMiddleware(thunk),
+));
+
+const app = (
+  <Provider store={store} >
+      <App />
+  </Provider>
+
+);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        {app}
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

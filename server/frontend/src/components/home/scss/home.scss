@@ -1,0 +1,21 @@
+#grid-container{
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0);
+   display: grid; 
+   gap: 1rem;
+   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+   grid-auto-rows: 240px;
+   z-index: -1;
+}
+
+
+#page-bottom-boundary{
+    
+    bottom: 0;
+    width: 1px;
+    height: 1px;
+    
+}

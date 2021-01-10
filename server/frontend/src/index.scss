@@ -1,0 +1,63 @@
+@import "./style/colors"; 
+
+
+
+$elementsMargin : 0.5vh;
+$elementsfontSize : 2vw;
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Press start 2p';
+  src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
+
+body {
+  
+  font-family: 'Press start 2p' ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.text-white{
+  color: white;
+}
+
+
+
+.btn{
+  color:white;
+  margin: $elementsMargin;
+  font-size: $elementsfontSize;
+  font-family: 'Press start 2p';
+  border: solid 0.7rem white;
+  width: calc(100% - #{$elementsMargin}*2);
+  height: 5.5rem;
+  background-color: $black;
+  &:focus {
+      outline: none;
+    }
+  
+}
+
+.btn:hover{
+  cursor: pointer;
+  color: $black;
+  background-color: white;
+  
+}

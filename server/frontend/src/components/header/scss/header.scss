@@ -1,0 +1,45 @@
+
+@import "../../../style/colors";
+@import "../../../style/paths";
+
+// background image
+$background: "bg.svg";
+
+#Header{
+ position: fixed;
+ overflow-y: auto;
+ background: url('../../../#{$images}/#{$background}') no-repeat;
+ height: 100%; 
+ width: 100%;
+
+ background-position:top;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.logo{
+    width: 100%;
+    
+}
+
+.appbar{
+    position: fixed;
+    text-align: left;
+    padding: 2vh;
+}
+
+@media screen and (orientation:portrait) { 
+    .appbar{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .logo{
+        width: 50%;
+    }
+ }
+
+// global
+ .fixed{ 
+     position: fixed;
+ }

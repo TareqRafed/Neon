@@ -1,0 +1,46 @@
+@import "../../../style/colors";
+
+$loginPadding: 2rem;
+
+$elementsMargin : 0.5vh;
+
+$elementsfontSize : 2vw;
+
+$inputFontSize : 1.4rem;
+
+#login{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    z-index: -1;
+    background-color: $blue;
+    overflow: hidden;
+    padding: $loginPadding;
+    
+}
+
+@media screen and (orientation:portrait) { 
+    #login{
+        width: 80%;
+       top: 60%;
+    }
+ }
+
+
+
+#login > form > * {
+    display: block;
+}
+
+
+#login > .error-msg{
+    font-size: 2.3vw;
+    color: red;
+    margin-bottom: 5vh;
+    display: block;
+}
+
+
+
