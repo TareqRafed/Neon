@@ -1,7 +1,7 @@
 # Neon
 
 
-<img src="https://github.com/TareqRafed/Neon/blob/main/server/frontend/src/assets/images/logo.svg">
+<img src="https://github.com/TareqRafed/Neon/blob/main/logo.png">
 
 
 
