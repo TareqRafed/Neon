@@ -14,9 +14,7 @@
 
 ### [NEON](https://neon-lot.herokuapp.com/)
 
-#### media aka user uploads won't be available because of heroku (hosting site) 
-#### an external storage servise is required such as aws s3
-#### learn more https://help.heroku.com/K1PPS2WM/why-are-my-file-uploads-missing-deleted 
+#### used google cloude storage to store media
 
 ## Technologies used 
 
